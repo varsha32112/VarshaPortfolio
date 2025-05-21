@@ -1,0 +1,19 @@
+{
+  "name": "varsha-portfolio",
+  "version": "1.0.0",
+  "description": "Varsha's Portfolio Website",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server --port=3000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "portfolio",
+    "website"
+  ],
+  "author": "Varsha",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.2"
+  }
+} 

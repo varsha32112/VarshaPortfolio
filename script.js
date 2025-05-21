@@ -117,3 +117,23 @@ document.querySelectorAll('#sidemenu a').forEach(link => {
         sidemenu.style.right = "-200px";
     });
 });
+
+// Tab switching functionality
+function opentab(tabname) {
+    const tablinks = document.getElementsByClassName("tab-links");
+    const tabcontents = document.getElementsByClassName("tab-contents");
+    
+    // Remove active class from all tabs
+    for (let tablink of tablinks) {
+        tablink.classList.remove("active-link");
+    }
+    
+    // Hide all tab contents
+    for (let tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+    }
+    
+    // Add active class to clicked tab and show corresponding content
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
