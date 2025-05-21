@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varsha S | Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/e70e4049-8bfe-4cb8-aaed-4f92b1c580a1.jpeg" class="logo" alt="Varsha S Logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>Hi, I'm <span>Varsha S</span><br>from Bengaluru</h1>
+                <p class="subtitle">Passionate about creating innovative software solutions</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/addebbbe-46f9-41d3-824a-45cc05451b29.jpeg" alt="Varsha S">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a Computer Science graduate with a strong foundation in software development and a passion for creating innovative solutions. With expertise in Full Stack Development, I combine technical skills with creative problem-solving to deliver exceptional user experiences. My goal is to contribute to meaningful projects that make a positive impact.</p>
+                
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>Java, Python, JavaScript, HTML5, CSS3</li>
+                            <li><span>Frameworks & Libraries</span><br>Spring Boot, React.js, Node.js, Express.js</li>
+                            <li><span>Databases</span><br>MySQL, MongoDB, PostgreSQL</li>
+                            <li><span>Tools & Technologies</span><br>Git, Docker, AWS, RESTful APIs, Agile Methodologies</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>Technical Training Internship</span><br>10 SECONDS<br>Jan-Mar 2024</li>
+                            <li><span>Technical Training Internship</span><br>10 SECONDS<br>Jun-Sep 2024</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Bachelor of Engineering</span><br>Computer Science and Engineering<br>CGPA: 8.10<br>2020-2024</li>
+                            <li><span>Pre-University Course</span><br>Science Stream<br>Percentage: 88.3%<br>2018-2020</li>
+                            <li><span>Secondary School</span><br>SSLC<br>Percentage: 93.7%<br>2017-2018</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Full Stack Development</h2>
+                    <p>Building robust and scalable web applications using modern technologies. From frontend to backend, I ensure seamless integration and optimal performance.</p>
+                    <a href="#Portfolio">View Projects <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div>
+                    <i class="fas fa-mobile-alt"></i>
+                    <h2>Mobile Development</h2>
+                    <p>Creating cross-platform mobile applications with focus on user experience and performance. Implementing modern design patterns and best practices.</p>
+                    <a href="#Portfolio">View Projects <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div>
+                    <i class="fas fa-database"></i>
+                    <h2>Database Design</h2>
+                    <p>Designing and implementing efficient database solutions. Optimizing queries and ensuring data integrity across applications.</p>
+                    <a href="#Portfolio">View Projects <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/heart.png" alt="Heart Failure Prediction">
+                    <div class="layer">
+                        <h3>Heart Failure Prediction</h3>
+                        <p>A full-stack web application that predicts heart failure risk using Machine Learning algorithms. Features include user-friendly interface, real-time predictions, and detailed analytics.</p>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>Machine Learning</span>
+                            <span>HTML/CSS</span>
+                        </div>
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/healthcare-app.jpg" alt="Healthcare Mobile App" onerror="this.src='https://img.freepik.com/free-vector/medical-records-concept-illustration_114360-1512.jpg'">
+                    <div class="layer">
+                        <h3>Healthcare Mobile Application</h3>
+                        <p>An Android application for tracking long-term health conditions and maintaining medical records. Features include user authentication, health tracking, and medical history management.</p>
+                        <div class="tech-stack">
+                            <span>Java</span>
+                            <span>Android</span>
+                            <span>RESTful APIs</span>
+                            <span>SQLite</span>
+                        </div>
+                        <a href="https://drive.google.com/file/d/1nmCrCOb-4E_kW1xp2XNWseBwrwhJNlkG/view?usp=drive_link" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/HMS.png" alt="Hotel Management System" onerror="this.src='https://img.freepik.com/free-vector/hotel-booking-system-concept-illustration_114360-1235.jpg'">
+                    <div class="layer">
+                        <h3>Hotel Management System</h3>
+                        <p>A comprehensive database-driven system for hotel booking and management. Features include room booking, customer management, billing, and administrative controls.</p>
+                        <div class="tech-stack">
+                            <span>Java Swing</span>
+                            <span>MySQL</span>
+                            <span>JDBC</span>
+                            <span>OOP</span>
+                        </div>
+                        <a href="https://drive.google.com/file/d/1yImxeLNjumr1K6FSwqeP3KYC63i0lP3l/view?usp=drive_link" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/lms.jpg" alt="Learning Management System" onerror="this.src='https://img.freepik.com/free-vector/online-learning-isometric-concept_1284-17947.jpg'">
+                    <div class="layer">
+                        <h3>Learning Management System</h3>
+                        <p>A comprehensive platform for managing educational content, student progress, and course materials. Features include course management, student tracking, and assessment tools.</p>
+                        <div class="tech-stack">
+                            <span>Java</span>
+                            <span>Spring Boot</span>
+                            <span>MySQL</span>
+                            <span>React.js</span>
+                        </div>
+                        <a href="https://drive.google.com/drive/folders/15ZpVpiIkopmBoKy9oypKmiQwVxrmlbtb?usp=drive_link" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">View More Projects</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-envelope"></i>vars00647@gmail.com</p>
+                    <p><i class="fas fa-phone"></i>+91 7975100588</p>
+                    <div class="social-icons">
+                        <a href="https://linkedin.com/in/vikas-vikky-52aa76249"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <a href="Images/Varsha_Fresher_Resume (2).pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Send Message</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2024 Varsha S. Made with <i class="fas fa-heart"></i> by Varsha</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // Form submission
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby68QbNAjENc9nmWJwfoZDCzhDFUimUw6Bug2Ajl7CDpZ8cvuGr24bTLx9VKh3WjAXt/exec';
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById("msg");
+      
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully!";
+                    setTimeout(function(){
+                        msg.innerHTML = "";
+                    }, 5000);
+                    form.reset();
+                })
+                .catch(error => {
+                    msg.innerHTML = "Error sending message. Please try again.";
+                    console.error('Error!', error.message);
+                });
+        });
+    </script>
+</body>
+</html>
